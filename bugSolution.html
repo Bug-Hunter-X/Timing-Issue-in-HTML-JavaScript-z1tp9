@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Wait for the DOM to be fully loaded before manipulating elements
+    window.addEventListener('DOMContentLoaded', function() {
+      document.getElementById("myDiv").textContent = "This text should replace the original.";
+    });
+  </script>
+</body>
+</html>
